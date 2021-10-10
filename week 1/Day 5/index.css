@@ -1,0 +1,55 @@
+.fa-shopware{
+	
+	height: 50px;
+	margin-left: 2%;
+	
+}
+
+body{
+	background-image: url("background main.jpeg");
+	background-position: cover;
+	min-height: 100 vh;
+}
+
+
+nav{
+	background-color:  lightslategrey;
+	width: 100%;
+	height: 50px;
+	/*float: right;*/
+	/*margin-right: 10%;*/
+	text-align: right;
+	color: rgb(215,92,68);
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+h1{
+
+	position: fixed;
+	width:  50% vw;
+	margin-left:  10%;
+	margin-top: 20%;
+}
+
+a{
+	margin-right: 8%;
+	margin-top: 5%;
+	font-size: large;
+
+}
+
+a:hover {
+	color: rgb(215,92,68);
+}
+
+.main{
+	min-height: 90 vh;
+}
+
+footer {
+	position: fixed;
+	bottom: 2%;
+	left: 2;
+	font-family: fantasy;
+}
