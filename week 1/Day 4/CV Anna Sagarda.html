@@ -6,13 +6,42 @@
 	<title>Anna Sagarda</title>
 	<style>
 
-	html, body {
-    	height:100%;
-    	justify-content: center;
-  		align-items: center;
+	.main{
+    	height: 2200px;
+    	width:  100%;
+    	/*justify-content: center;
+  		align-items: center;*/
+  		text-align: center;
 		}
-			
-		.contact{
+	.right{
+		
+		float: left;
+		width:  70%;
+		height: 100%; 
+		text-align: center;
+		overflow: auto;
+	}
+
+	.left{
+		background-color:  rgb(241,231,230);
+		width:  30%;
+		height:  100%;
+		float: left;		
+		
+	}
+
+	img{
+		 
+		height: auto; 
+    	width: auto; 
+    	max-width: 200px; 
+    	max-height: 200px;
+    	border-radius: 50%;
+    	margin-top: 20%;
+	}
+
+		
+	.contact{
 
 		position: fixed;
 		top: 50%;
@@ -25,7 +54,7 @@
 			
 		}
 
-		.profile{
+	.profile{
 
 		position: absolute;
 		
@@ -36,39 +65,12 @@
 			
 		}
 
-	img{
-		 
-		height: auto; 
-    	width: auto; 
-    	max-width: 200px; 
-    	max-height: 200px;
-    	border-radius: 50%;
-    	margin-top: 20%;
-	}
-
-	.right{
-		
-		float: left;
-		width:  70%;
-		height: 100%; 
-		text-align: center;
-		overflow: auto;
-
-	}
-
-	.left{
-		background-color:  rgb(241,231,230);
-		
-		position: relative;
-		width:  30%;
-		float: left;
-		height: 100%; }
-
+	
 	</style>
 </head>
 <body>
-
-<div class="left">
+<div class="main">
+	<div class="left">
 		<div class="contact">
 			<img src="profile picture.JPG">
 			<h1> Anna Sagarda</h1>
@@ -80,7 +82,7 @@
 
 				</p>
 		</div>	
-</div>
+	</div>
 	
 <div class="right">
 	<div class="profile">
@@ -197,6 +199,6 @@
 	</div>			
 </div>	
 
-
+</div>
 </body>
 </html>
