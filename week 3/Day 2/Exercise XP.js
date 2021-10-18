@@ -1,0 +1,13 @@
+let a=5+"34"; //534
+let b= 5 - "4"; // 1
+let c = 10 % 5; //0
+let d = 5 % 10 //5
+let e = "Java" + "Script" //JavaScript
+let g = " " + " " //'  '
+let h= " " + 0 // ' 0'
+let i = true + true //2
+let j = true + false //1
+let k = false + true //1
+let l = false - true //-1
+let m = 3-4 //-1
+let n = "Bob"-"bill" //NAN
