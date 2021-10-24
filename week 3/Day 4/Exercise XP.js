@@ -6,7 +6,7 @@ let y = parseInt(prompt("type the y value"));
 if (x>y) {alert("x is the biggest number")}
 else { alert("try again")}
 
-//Exercise 2//
+// //Exercise 2//
 
 let newDog = prompt("type in your favourite dog breed") //"Chihuahua"
 
@@ -19,7 +19,7 @@ console.log(newDog.toLowerCase());
 if (newDog.toLowerCase() === "chihuahua") {alert ("I love Chihuahuas, it’s my favorite dog breed")}
  else {alert("I don't care, I prefer rabbits")};
 
-//Exercise 3//
+// //Exercise 3//
 
 let x = prompt("Give me a natural number");
 var num1 = parseInt(x);
@@ -34,10 +34,6 @@ if (isNaturalNumber(x) && num1%2 === 0 && num1!==0) {alert("x is an even number"
 
 
 //Exercise 4//
-
-let me = ["my", "favourite", "color", "is", "blue"]
-
-console.log(me.join(' '))
 
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
 
