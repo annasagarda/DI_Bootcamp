@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise XP 1</title>
+</head>
+<body>
+<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+
+  <script>
+  	let elem1 = document.getElementById("navBar")
+    elem1.setAttribute("id", "socialNetworkNavigation")
+    console.log(elem1)
+
+    let newLi = document.createElement("li")
+    console.log(newLi)
+    let newTextNode = document.createTextNode('Logout')
+    newLi.appendChild(newTextNode);
+    elem2 = document.getElementsByTagName("ul")[0];
+    elem2.appendChild(newLi)
+
+    let elem3 = elem2.firstElementChild
+    let elem4 = elem2.lastElementChild
+
+    alert(elem3.textContent, elem4.textContent)
+
+  </script>
+
+</body>
+</html>
