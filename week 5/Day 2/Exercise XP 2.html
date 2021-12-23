@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit" id="submit">
+</form> 
+<ul class="usersAnswer"></ul>
+
+<script>
+  
+  let form = document.forms[0]
+
+  console.log(form)
+
+  fName = form.elements.fname
+  console.log(fName)
+  lName = form.elements.lname
+  console.log(lName)
+
+  form.addEventListener("submit", (e)=>{
+     e.preventDefault()
+    let inputs = e.target.elements
+    console.log(inputs)
+
+    for (i=0; 1<inputs.length; i++) {
+      const element = inputs[i]
+      if(element.type == "text"){
+        console.log(element.value)
+      
+
+ let listItem = document.createElement("li")
+ console.log(listItem)
+
+ let newTextNode = document.createTextNode('element')
+
+ listItem.appendChild(newTextNode)
+ let ulList = document.getElelementsByTagName("ul")
+ ulList.appendChild(listItem)
+
+}
+    }
+})
+
+</script>
+</body>
+</html>

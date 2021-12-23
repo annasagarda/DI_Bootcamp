@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <article>
+    <h1> Some Facts </h1>
+    <h2> The Chocolate </h2>
+    <h3> History of the chocolate </h3>
+    <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+    Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+    <p> After the European discovery of the Americas, chocolate became 
+    very popular in the wider world, and its demand exploded. </p>
+    <p> Chocolate has since become a popular food product that millions enjoy every day, 
+    thanks to its unique, rich, and sweet taste.</p> 
+    <p> But what effect does eating chocolate have on our health?</p> 
+
+    <button id="toggleBold" type="button">ClickMe</button>
+</article>
+
+<script>
+  
+  let ex1 = document.getElementsByTagName("h1")[0].innerHTML
+  console.log(ex1);
+
+  let ex2 = document.querySelector('p:last-child')
+  console.log(ex2)
+
+  ex2.remove();
+
+  //or
+
+  //let pNumber = document.getElementsByTagName("p").length;
+ // let deleting = document.getElementsByTagName("p")[pNumber]
+
+
+  let ex3 = document.getElementsByTagName('h2')[0]
+
+  ex3.addEventListener("click", addColorOnClick)
+  function addColorOnClick(e) {
+    e.target.style.backgroundColor = "red"
+  }
+
+  let ex4 = document.getElementsByTagName('h3')[0]
+  ex4.addEventListener("click", hideOnClick)
+
+  function hideOnClick(e) {
+    e.target.style.display = "none"
+  }
+
+
+
+  let btn = document.getElementById("toggleBold")
+  let bold = document.querySelectorAll("p")
+
+  
+  btn.addEventListener("click", function(){
+   let bold = document.querySelectorAll("p") 
+   for(i=0; i<bold.length; i++){
+      
+      bold[i].style.fontWeight = "bold"
+    }
+  });
+
+</script> 
+</body>
+</html>

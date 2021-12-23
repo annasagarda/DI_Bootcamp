@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="main.css"> 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>Anna's Portfolio</title>
+</head>
+<body>
+
+	<main>
+<nav class="navbar navbar-expand-lg navbar-light bg-0">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto ms-3 fs-3" href="#">
+    	<i class="fas fa-dragon" style="color:#f94a06;"></i> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid #f94a06">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fs-3">
+        <li class="nav-item ">
+          <a class="nav-link active " aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header>
+<div class="p-5 bg-1 ">
+    <h1 class="mb-3">Anna, The Developer</h1>
+  	
+
+ <button onclick="on()" class="btn" style="font-family: Coming Soon; ">LET'S GET STARTED</button>
+</div>	
+
+<div id="overlay" onclick="off()">
+	
+	<div id="text">
+    
+    <h4 class="mb-3">Hello and Welcome to my official website.</h4>
+     <h4 class="mb-3">Your way to professional and responsive Web Content</h4>
+  </div>	
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+</header>
+</main>
+
+<section>
+	<div class="row justify-content-center">
+    <div class="col-4 mt-4 mb-4" style="text-align: center;color: #f94a06 ">
+      <h1> About me</h1>
+</div>
+    </div>
+	
+<div class="row justify-content-center">
+    <div class="col-2">
+      <img src="profile picture.JPG" class="img-thumbnail" alt="Anna's face" style="border-radius: 50px;">
+    </div>
+    <div class="col-6" style="border-left:3px solid greenyellow;">
+      <h2 style="margin-left: 30px"> Started my way in 2021. </h2>
+      <ul style="list-style: none;">
+      	<li>Strong background from mechanical engineering degree</li>
+      	<li>Artistic background from apparel design and home design</li>
+      	<li>Creativity and can-do approach over all</li></ul>
+    </div>
+  </div>
+
+</section>
+
+<section>
+	
+	<div class="row justify-content-center">
+    <div class="col-4 mt-4 mb-4" style="text-align: center;color: #f94a06 ">
+      <h1> Portfolio</h1>
+</div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Screenshot 1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Screenshot 2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+
+<section class="row justify-content-center">
+
+	<div class="row justify-content-center">
+	
+    <div class="col-4 mt-4 mb-4" style="text-align: center;color: #f94a06 ">
+      <h1> Blog</h1>
+</div>
+</div>
+   
+
+<div class="card threed" style="width: 25%;">
+  <img src="blog1.jpeg" class="card-img-top" alt="technology">
+  <div class="card-body">
+    <h5 class="card-title">World of Technology</h5>
+    <p class="card-text">Working with the world leading EOMs of the new technology introductions.</p>
+    <a href="#" style="color: #f94a06; text-decoration: none ">Tell Me More >></a>
+  </div>
+</div>
+
+<div class="card threed" style="width: 25%;">
+  <img src="kitesurf blog.jpeg" class="card-img-top" alt="technology">
+  <div class="card-body">
+    <h5 class="card-title">World of Adrenalin</h5>
+    <p class="card-text">Introducing the best kitesurf schools, clubs, spots and eguipment.</p>
+    <a href="#" style="color: #f94a06; text-decoration: none ">Tell Me More >></a>
+  </div>
+</div>
+
+<div class="card threed" style="width: 25%;">
+  <img src="blog sport.jpeg" class="card-img-top" alt="technology">
+  <div class="card-body">
+    <h5 class="card-title">World of Movements</h5>
+    <p class="card-text">Leading you to the world of body and mind, movement, body relaxation and good nutrition.</p>
+    <a href="#" style="color: #f94a06; text-decoration: none ">Tell Me More >></a>
+  </div>
+</div>
+
+</section>
+
+<footer class="row justify-content-center">
+	<div class="row justify-content-center">
+	
+    <div class="col-4 mt-4 mb-4" style="text-align: center;color: #f94a06 ">
+      <h1> Contact</h1>
+</div>
+</div>
+
+
+<div class="row justify-content-center">
+    <div class="col-3  justify-content-center" style="text-align: center; padding-top: 5%;">
+    <div>
+      <i class="far fa-envelope" style="margin: 10px"></i>
+      <i class="fab fa-linkedin-in" style="margin: 10px"></i>
+      <i class="fab fa-instagram" style="margin: 10px"></i>
+      <i class="fab fa-github" style="margin: 10px"></i> <br>
+  </div>
+  <div style="margin-top: 10px">
+      <h4>Get In Touch</h4>
+    </div>
+      
+    </div>
+    <div class="col-6" style="border-left:3px greenyellow;">
+      <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Your Inquiry</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <a href="#" style="color: #f94a06; text-decoration: none ; font-size: xx-large; margin-top: 10px; margin-left: 90%">
+  	<i class="far fa-paper-plane"></i>
+  </a>
+</div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

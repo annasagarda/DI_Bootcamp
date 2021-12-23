@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+
+  <script>
+  	let node1 = document.getElementById("container")
+  	node1.style.backgroundColor = "red";
+  	let node2 = document.getElementsByTagName("div")[0]
+  	node2.style.color = "white";
+  	let node3 = document.querySelectorAll('ul > li')
+  	
+
+  	for (let elem of node3) {
+        alert(elem.innerHTML); // "test", "passed"
+        elem.style.color = "green";
+
+      }
+
+    for (let elemn of document.body.children) {
+        	if(elemn.matches("ul")){elemn.style.backgroundColor = "purple"
+        }
+}
+
+  </script>
+
+</body>
+</html>

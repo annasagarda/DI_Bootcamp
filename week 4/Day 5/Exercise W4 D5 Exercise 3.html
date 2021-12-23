@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+
+<script>
+  back =  document.body.children[0]
+  back.style.backgroundColor = "lightblue"
+  back.style.padding = "20px"
+
+ elem1 = document.getElementsByTagName('li')[0]
+  elem1.style.display = 'none'
+ 
+ elem2 = document.getElementsByTagName('li')[1]
+ elem2.style.border = 'solid blue 2px'
+ document.body.style.fontSize = "32px"
+
+ if(back.style.backgroundColor = "lightblue") {
+  person1 = elem1.innerHTML
+  person2 = elem2.innerHTML
+  alert("Hello" + person1 + "&" + person2)
+ }
+
+</script>
+</body>
+</html>

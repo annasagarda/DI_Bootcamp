@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hackathon</title>
+</head>
+<body>
+    <section>
+    <form id="starter">
+        <label for="user1">Player 1:</label><br>
+        <input type="text" id="user1" name="user1"> <br>
+        <label for="user2">Player 2:</label><br>
+        <input type="text" id="user2" name="user2"> <br>
+        <label for="user3">Player 3:</label><br>
+        <input type="text" id="user3" name="user3"> <br>
+        <button id="submitbutton">Submit</button>
+
+    </form>
+    </section>
+    <script>
+        let form = document.forms[0]
+
+  console.log(form)
+
+  let player1 = document.getElementById("user1")
+  
+  let player2 = document.getElementById("user2")
+  let player3 = document.getElementById("user3")
+  let inputC = document.getElementsByTagName("button")[0]
+  console.log(player1, player2, player3)
+
+  inputC.addEventListener("click", (e)=>{
+     e.preventDefault()
+    let user1 = form.elements[0].value
+    let user2 = form.elements[1].value
+    let user3 = form.elements[2].value
+    form.style.display = "none"
+})
+  //   if (inputValue1&&inputValue2){
+
+  //     for(let a=0; a<e.target.elements.length-2; a++){
+  //       let currentInput = e.target.elements[a]
+  //       let li=document.createElement("li")
+  //       let textNode = document.createTextNode(currentInput.value)
+  //       li.append(textNode)
+  //       let ul = docuemnt.querySelector('ul')
+  //       ul.append(li)
+  //     }
+  //   }
+  // })
+//         let incrementXYPostion = 0
+// const redCube = document.querySelector("#red")
+// let incrementInterval= ()=>{let currentInterval  = setInterval(() => {
+//     redCube.style.top=`${incrementXYPostion}px`
+//     redCube.style.left=`${incrementXYPostion}px`
+//     incrementXYPostion+=50
+//     if(incrementXYPostion==500){
+//         clearInterval(currentInterval)
+//         incrementXYPostion = 0
+//     }
+// }, 500)};
+// let starter = document.querySelector(`#starter`)
+// starter.addEventListener('click', incrementInterval);
+    </script>
+</body>
+</html>

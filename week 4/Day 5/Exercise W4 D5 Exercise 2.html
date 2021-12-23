@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+
+  <script>
+
+        let elem5 = document.querySelectorAll("li")
+
+        for(i=0; i<elem5.length-1; i++) {
+            if(elem5[i].innerHTML=="Pete"){
+                elem5[i].innerHTML = "Richard"
+            }
+        }
+
+        let elem6 = document.querySelectorAll('ul > li:first-child')
+        for (let elems of elem6) {
+        elems.innerHTML = "Anna"}
+        
+
+        let newLi1 = document.createElement('li')
+        let newTextForLi = document.createTextNode('Hey Students')
+        newLi1.appendChild(newTextForLi)
+        uls = document.getElementsByTagName("ul")
+        uls.appendChild(newLi1)
+
+        for(let elemChild of elem5) {
+            if(elemChild.innerHTML="Sarah"){
+                let elemParent = document.getElementsByTagName('ul')
+                elemParent.removeChild(elemChild)}
+            }
+
+        uls.setAttribute('class', "student_list")
+
+        document.body[1].classList.add("university", "attendance")
+
+  </script>
+
+</body>
+</html>
